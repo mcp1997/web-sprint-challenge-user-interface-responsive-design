@@ -137,7 +137,7 @@ describe('menu.html', () => {
         if(menuSections === undefined || menuSections === null || menuSections.length === 0) fail(`Inappropriate number of menu sections.`);
         
         menuSections.forEach((section) => {
-            const menuItems = Array.from(section.querySelectorAll('.menu-listing'));
+            const menuItems = Array.from(section.querySelectorAll('.menu-item'));
             if(menuItems === undefined || menuSections === null || menuSections.length === 0) fail(`Inappropriate number of menu items.`);
 
             menuItems.forEach((item) => {

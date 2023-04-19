@@ -177,7 +177,7 @@ nav a {
   width: 40%;
 }
 
-.menu-item {
+.menu-listing {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -261,28 +261,23 @@ width: 50%;
       height: 50vh;
     }
 
-    h1 {
-      margin-bottom: 0;
-    }
-
     h1 a {
       display: block;
       font-size: 4.5rem;
       width: 100%;
-      margin-bottom: 0;
+      margin-bottom: -5vh;
     }
 
     nav {
+      display: block;
       margin: 0 auto;
       width: 80%;
-      padding: 0;
     }
 
     .nav-div {
-      flex-flow: column nowrap;
+      display: block;
       text-align: center;
       width: 70%;
-      margin-top: 0;
     }
 
     .nav-div a {
@@ -337,13 +332,13 @@ width: 50%;
       text-align: center;
     }
 
-    .menu-listing {
+    .menu-item {
       flex-flow: column nowrap;
       text-align: center;
       padding-bottom: 3vh;
     }
 
-    .menu-item {
+    .menu-listing {
       flex-flow: column nowrap;
       padding-top: 3vh;
       margin-top: 0;

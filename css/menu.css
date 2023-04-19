@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -48,7 +48,7 @@ table {
 }
 
 * {
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
     box-sizing: border-box;
 }
 
@@ -185,7 +185,7 @@ nav a {
 }
 
 .menu-item p {
-  font-size: 4rem;
+  width: 100%;
 }
 
 .italic {
@@ -260,11 +260,24 @@ width: 50%;
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 4rem;
+    .header-div {
+      height: 50vh;
+    }
+
+    h1 a {
+      display: block;
+      font-size: 4.5rem;
+      width: 100%;
+    }
+
+    header nav {
+      flex-flow: column nowrap;
+      text-align: center;
+    }
+
+    .logos {
+      width: 50%;
+      font-size: 4rem;
     }
 
     /* menu */
@@ -310,18 +323,64 @@ width: 50%;
       text-align: center;
     }
 
-    .menu-item {
+    .menu-listing {
       flex-flow: column nowrap;
       text-align: center;
-      margin-top: 3vh;
-      padding-top: 2.5vh;
+      padding-bottom: 3vh;
+    }
+
+    .menu-item {
+      flex-flow: column nowrap;
+      padding-top: 3vh;
+      margin-top: 0;
       border-top: solid 5px #000411;
     }
 
     /* footer section */
     footer {
-        height: auto;
-        padding-top: 2.5vh;
-        font-size: 2rem;
+      height: auto;
+      padding-top: 2.5vh;
+      font-size: 2rem;
+    }
+
+    .footer-div {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .email-signup {
+      width: 100%;
+    }
+
+    .email-signup h3 {
+      font-size: 3.5rem;
+      margin-bottom: 5%;
+    }
+
+    form {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 90%;
+    }
+
+    form input {
+      width: 100%;
+    }
+
+    form button {
+      width: 100%;
+    }
+
+    footer nav {
+      margin: 12% auto 6%;
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: center;
+    }
+
+    .copyright p {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
     }
 }
